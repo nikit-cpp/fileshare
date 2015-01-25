@@ -10,5 +10,6 @@
 <body>
 <h1>Welcome To Struts 2!</h1>
 <p><a href="<s:url action='hello'/>">Hello World</a></p>
+<p><a href="/hello_world/index2.jsp">Hello World 2 with input</a></p>
 </body>
 </html>
