@@ -7,6 +7,21 @@
 	<packaging>war</packaging>
 	<build>
 		<finalName>hello_world</finalName>
+
+		<!-- in settings.xml : must be rile manager-script <user username="admin" password="s3cret" roles="manager-gui,manager-script"/>
+		And the URI in the plugin should be /manager/text -->
+		<plugins>
+			<plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>
+				<version>2.2</version>
+				<configuration>
+					<url>http://localhost:8080/manager/text</url>
+					<server>TomcatServer</server>
+					<path>/hello_world</path>
+				</configuration>
+			</plugin>
+		</plugins>
 	</build>
 
 	<dependencies>
