@@ -34,8 +34,8 @@
 				<version>9.2.2.v20140723</version>
   				<configuration>
 					<!-- <webApp>
-						<contextPath>/</contextPath>
-					</webApp> -->
+						<contextPath>/hello_world</contextPath>
+					</webApp>  -->
 					<scanIntervalSeconds>2</scanIntervalSeconds>
 				</configuration>
 			</plugin>
