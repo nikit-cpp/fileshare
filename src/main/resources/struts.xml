@@ -6,6 +6,8 @@
 <struts>
 
 	<constant name="struts.devMode" value="true" />
+	<!-- in bytes, defasult 2097152 Bytes = 2MB -->
+	<constant name="struts.multipart.maxSize" value="100000000" />
 
 	<package name="basicstruts2" extends="struts-default">
 		<action name="">
