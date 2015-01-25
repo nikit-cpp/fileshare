@@ -4,13 +4,18 @@ In settings.xml : must be rile manager-script <user username="admin" password="s
 
 #Проблема:
 The superclass “javax.servlet.http.HttpServlet” was not found on the Java Build Path  
-##Решение:
+
+##Решение 2:  
 [http://stackoverflow.com/questions/22756153/the-superclass-javax-servlet-http-httpservlet-was-not-found-on-the-java-build/25266076#25266076]  
 Add a runtime first and select project properties then check server name from 'Runtimes' tab as shown in image.  
+Rigth-click on project -> Properties -> Project Facets -> Runtimes tab in right half -> Add Apache Tomcat 8 here
+![img](http://i.stack.imgur.com/U46s9.png)
+
 
 #Проблема:
 Cannot change version of project facet Dynamic Web Module to 2.4.	struts-hello-world		line 1	Maven Java EE Configuration Problem  
-##Решение:
+
+##Решение:  
 I updated my web.xml  
 
 <web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
