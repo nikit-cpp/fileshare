@@ -1,4 +1,4 @@
-#Деплой-плагин:
+#tomcat7-deploy-плагин:
 In settings.xml : must be rile manager-script <user username="admin" password="s3cret" roles="manager-gui,manager-script"/>  
 ...And the URI in the plugin should be /manager/text  
 
@@ -9,7 +9,7 @@ The superclass “javax.servlet.http.HttpServlet” was not found on the Java Bu
 Add a runtime first and select project properties then check server name from 'Runtimes' tab as shown in image.  
 
 #Проблема:
-Cannot change version of project facet Dynamic Web Module to 2.4.	struts-hello-world		line 1	Maven Java EE Configuration Problem
+Cannot change version of project facet Dynamic Web Module to 2.4.	struts-hello-world		line 1	Maven Java EE Configuration Problem  
 ##Решение:
 I updated my web.xml  
 
