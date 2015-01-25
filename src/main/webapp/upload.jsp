@@ -8,7 +8,7 @@ pageEncoding="UTF-8"%>
 <title>File Upload</title>
 </head>
 <body>
-   <form action="upload" method="post" enctype="multipart/form-data">
+   <form action="uploaded" method="post" enctype="multipart/form-data">
       <label for="myFile">Upload your file</label>
       <input type="file" name="myFile" />
       <input type="submit" value="Upload"/>

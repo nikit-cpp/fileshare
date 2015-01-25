@@ -28,7 +28,7 @@
 			<result name="success">/HelloWorld2.jsp</result>
 		</action>
 
-		<action name="upload" class="uploadFile.UploadFile">
+		<action name="uploaded" class="uploadFile.UploadFile">
 	    	<interceptor-ref name="fileUpload">
 				<param name="maximumSize">100000000</param>
 			</interceptor-ref>
