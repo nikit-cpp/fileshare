@@ -24,8 +24,12 @@ I updated my web.xml
     version="3.0">  
     
 .. and in pom.xml add to properties:  
-<maven.compiler.source>1.7</maven.compiler.source>  
-<maven.compiler.target>1.7</maven.compiler.target>  
+`<maven.compiler.source>1.7</maven.compiler.source>`  
+`<maven.compiler.target>1.7</maven.compiler.target>`  
 
 #Документация по Jetty-плагину
 http://www.eclipse.org/jetty/documentation/9.2.2.v20140723/jetty-maven-plugin.html  
+
+#Хорошие примеры .jsp от tutorialspoint
+[Примеры](http://www.tutorialspoint.com/struts_2/struts_form_tags.htm)  
+
