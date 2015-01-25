@@ -10,6 +10,7 @@
 <body>
 <h1>Welcome To Struts 2!</h1>
 <p><a href="<s:url action='hello'/>">Hello World</a></p>
-<p><a href="${pageContext.request.contextPath}/index2.jsp">Hello World 2 with input</a></p>
+<p><a href="${pageContext.request.contextPath}/input2.jsp">Hello World 2 with input</a></p>
+<p><a href="${pageContext.request.contextPath}/upload.jsp">upload file</a></p>
 </body>
 </html>
