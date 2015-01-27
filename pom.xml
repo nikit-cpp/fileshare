@@ -43,7 +43,7 @@
 				<version>9.2.2.v20140723</version>
 				<configuration>
 					<!-- <webApp> <contextPath>/fileshare_custom</contextPath> </webApp> -->
-					<scanIntervalSeconds>2</scanIntervalSeconds>
+					<scanIntervalSeconds>5</scanIntervalSeconds>
 				</configuration>
 			</plugin>
 			<plugin>
