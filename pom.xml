@@ -10,7 +10,7 @@
 		<maven.compiler.source>1.7</maven.compiler.source>
 		<maven.compiler.target>1.7</maven.compiler.target>
 	</properties>
-	
+
 	<dependencies>
 		<dependency>
 			<groupId>org.apache.struts</groupId>
@@ -18,10 +18,10 @@
 			<version>2.3.20</version>
 		</dependency>
 	</dependencies>
-	
+
 
 	<build>
-		<finalName>ololo</finalName>
+		<finalName>${project.artifactId}-${project.version}</finalName>
 
 		<!-- in settings.xml : must be rile manager-script <user username="admin" 
 			password="s3cret" roles="manager-gui,manager-script"/> And the URI in the 
@@ -34,7 +34,7 @@
 				<configuration>
 					<url>http://localhost:8080/manager/text</url>
 					<server>TomcatServer</server>
-					<!-- <path>/fileshare</path> -->
+					<!-- <path>/fileshare_custom</path> -->
 				</configuration>
 			</plugin>
 			<plugin>
@@ -42,7 +42,7 @@
 				<artifactId>jetty-maven-plugin</artifactId>
 				<version>9.2.2.v20140723</version>
 				<configuration>
-					<!-- <webApp> <contextPath>/fileshare</contextPath> </webApp> -->
+					<!-- <webApp> <contextPath>/fileshare_custom</contextPath> </webApp> -->
 					<scanIntervalSeconds>2</scanIntervalSeconds>
 				</configuration>
 			</plugin>
@@ -52,7 +52,7 @@
 				<version>2.4</version>
 				<configuration>
 					<browser>*firefox</browser>
-					<suite>src/main/webapp/selenium/test-suite.xhtml</suite>
+					<suite>src/test/selenium/test-suite.xhtml</suite>
 					<results>${project.build.directory}/selenium.html</results>
 					<startURL>http://localhost:4444/</startURL>
 				</configuration>
@@ -60,5 +60,26 @@
 
 		</plugins>
 	</build>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>central</id>
+			<name>Maven Plugin Repository</name>
+			<url>http://repo1.maven.org/maven2</url>
+			<layout>default</layout>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<releases>
+				<updatePolicy>never</updatePolicy>
+			</releases>
+		</pluginRepository>
+		<pluginRepository>
+			<id>selenium-maven-plugin unofficial updates repo</id>
+			<name>my own plugin repo</name>
+			<url>http://mvn.16mb.com/plugin-repository/</url>
+		</pluginRepository>
+
+	</pluginRepositories>
 
 </project>
