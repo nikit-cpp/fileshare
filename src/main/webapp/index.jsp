@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<%@ taglib prefix="s" uri="/struts-tags" %>
+	pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="s" uri="/struts-tags"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -8,9 +8,15 @@
 <title>Basic Struts 2 Application - Welcome</title>
 </head>
 <body>
-<h1>Welcome To Struts 2!</h1>
-<p><a href="<s:url action='hello'/>">Hello World</a></p>
-<p><a href="${pageContext.request.contextPath}/input2.jsp">Hello World 2 with input</a></p>
-<p><a href="${pageContext.request.contextPath}/upload.jsp">upload file</a></p>
+	<h1>Welcome To Nikita's fileshare service!</h1>
+	<p>
+		<a href="<s:url action='hello'/>">Hello World</a>
+	</p>
+	<p>
+		<a href="${pageContext.request.contextPath}/input2.jsp">Hello World 2 with input</a>
+	</p>
+	<p>
+		<a href="${pageContext.request.contextPath}/upload.jsp">upload file</a>
+	</p>
 </body>
 </html>
