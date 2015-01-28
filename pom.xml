@@ -84,19 +84,17 @@
                 </configuration>
                 <executions>
                     <execution>
-                        <id>start</id>
+                        <id>start-selenium</id>
                         <phase>pre-integration-test</phase>
                         <goals>
                             <goal>start-server</goal>
                         </goals>
                         <configuration>
                             <background>true</background>
-                            <logOutput>true</logOutput>
-                            <multiWindow>true</multiWindow>
                         </configuration>
                     </execution>
                     <execution>
-                        <id>stop</id>
+                        <id>stop-selenium</id>
                         <phase>post-integration-test</phase>
                         <goals>
                             <goal>stop-server</goal>

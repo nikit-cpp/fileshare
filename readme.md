@@ -33,3 +33,5 @@ http://www.eclipse.org/jetty/documentation/9.2.2.v20140723/jetty-maven-plugin.ht
 #Хорошие примеры .jsp от tutorialspoint
 [Примеры](http://www.tutorialspoint.com/struts_2/struts_form_tags.htm)  
 
+#Пример Selenium+Jetty
+[ссылка](http://www.itforeveryone.co.uk/maven-selenium.html)
