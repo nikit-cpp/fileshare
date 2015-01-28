@@ -87,11 +87,19 @@
                         <id>start-selenium</id>
                         <phase>pre-integration-test</phase>
                         <goals>
+                            <goal>stop-server</goal>
                             <goal>start-server</goal>
                         </goals>
                         <configuration>
                             <background>true</background>
                         </configuration>
+                    </execution>
+                    <execution>
+                        <id>perform-test</id>
+                        <phase>integration-test</phase>
+                        <goals>
+                            <goal>selenese</goal>
+                        </goals>
                     </execution>
                     <execution>
                         <id>stop-selenium</id>
