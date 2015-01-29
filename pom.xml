@@ -17,6 +17,35 @@
 			<artifactId>struts2-core</artifactId>
 			<version>2.3.20</version>
 		</dependency>
+
+
+
+	    <dependency>
+        <groupId>com.jgeppert.struts2.jquery</groupId>
+        <artifactId>struts2-jquery-plugin</artifactId>
+        <version>3.7.1</version>
+    </dependency>
+    <dependency>
+        <groupId>com.jgeppert.struts2.jquery</groupId>
+        <artifactId>struts2-jquery-grid-plugin</artifactId>
+        <version>3.7.1</version>
+    </dependency>
+    <dependency>
+        <groupId>com.jgeppert.struts2.jquery</groupId>
+        <artifactId>struts2-jquery-richtext-plugin</artifactId>
+        <version>3.7.1</version>
+    </dependency>
+    <dependency>
+        <groupId>com.jgeppert.struts2.jquery</groupId>
+        <artifactId>struts2-jquery-tree-plugin</artifactId>
+        <version>3.7.1</version>
+    </dependency>
+    <dependency>
+        <groupId>com.jgeppert.struts2.jquery</groupId>
+        <artifactId>struts2-jquery-mobile-plugin</artifactId>
+        <version>3.7.1</version>
+    </dependency>
+	
 	</dependencies>
 
 
@@ -43,7 +72,7 @@
 				<version>9.2.2.v20140723</version>
 				<configuration>
 					<!-- <webApp> <contextPath>/fileshare_custom</contextPath> </webApp> -->
-					<scanIntervalSeconds>5</scanIntervalSeconds>
+					<scanIntervalSeconds>1</scanIntervalSeconds>
 				</configuration>
 			</plugin>
 			<plugin>
